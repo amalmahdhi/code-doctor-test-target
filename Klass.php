@@ -15,6 +15,15 @@ class Klass{
        public function create(){
 		$context = __FILE__
 		$invoker = self::__class__
-      } 
+      }
+	
+     public function __getattr(string $name){
+	foreach($_name => $_value in $this->attributes){
+		if($_name == $name){
+			return [$_name, $_value]; 
+		}
+	}
+	
+     } 
 
 }
