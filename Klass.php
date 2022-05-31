@@ -5,7 +5,7 @@
 
 class Klass{
 	$attributes = [];
-	$functions = [};
+	$functions = [];
 	
 	public function __construct(array $attributes, array $functions){
 		$this->attributes = $attributes;
